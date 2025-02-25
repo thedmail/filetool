@@ -52,24 +52,25 @@ println ("a total of ${jumboCounter} jumbos.")
 
  fun concatFiles (directories:List<File>,
                   filesByDirectory:MutableList<MutableList<File>>) {
-
+   var directoryIndex=-1
    // Use this to iterate through directory names
-   for (directory in directories) {
-     val concatFile=File(directory.toString()+"_concat.txt")
+
 
      for (eachDirectory in filesByDirectory) {
-       var totalSize=0L
+       directoryIndex++
+       val concatFile=File(directories[directoryIndex].toString()+"_concat.md")
        val aggregatedText = StringBuilder()
+       var totalSize=0L
 
        for (eachFile in eachDirectory) {
          totalSize += eachFile.length()
          if (totalSize > 500000) {
-           println("500k limit exceeded. ${directory} truncated.")
+           println("500k limit exceeded. ${directories[directoryIndex]} truncated.")
            break
          }
          eachFile.forEachLine { aggregatedText.append(it).append("\n")  }
        }
        concatFile.writeText(aggregatedText.toString())
+       totalSize=0
      }
-   }
  }
