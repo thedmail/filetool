@@ -66,7 +66,7 @@ println ("a total of ${jumboCounter} jumbos.")
          totalSize += eachFile.length()
          if (totalSize > 500000) {
            println("500k limit exceeded. ${directories[directoryIndex]} truncated.")
-           break
+//           break
          }
          eachFile.forEachLine { aggregatedText.append(it).append("\n")  }
        }
