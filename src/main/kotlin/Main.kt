@@ -68,7 +68,11 @@ println ("a total of ${jumboCounter} jumbos.")
            println("500k limit exceeded. ${directories[directoryIndex]} truncated.")
 //           break <-- uncomment to make the tool enforce NotebookLM's 500k limit
          }
-         eachFile.forEachLine { aggregatedText.append(it).append("\n")  }
+         eachFile.forEachLine {
+           // Get rid of the "if" statement if you want to keep the "{%...%}"s
+         if (!(it.startsWith("{%") && it.endsWith("%}")))
+           aggregatedText.append(it).append("\n")
+         }
        }
        concatFile.writeText(aggregatedText.toString())
        totalSize=0
