@@ -66,7 +66,7 @@ println ("a total of ${jumboCounter} jumbos.")
          totalSize += eachFile.length()
          if (totalSize > 500000) {
            println("500k limit exceeded. ${directories[directoryIndex]} truncated.")
-//           break <-- uncomment to make the tool enforce NotebookLM's 500k limit
+//           break <-- uncomment to make the tool enforce NotebookLM's 500k limit.
          }
          eachFile.forEachLine {
            // Get rid of the "if" statement if you want to keep the "{%...%}"s

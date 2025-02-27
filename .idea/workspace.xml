@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c70fda1-e83c-4d1d-bdab-93cc1d3092c4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740524472381</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adds code to strip out the {%...%} lines.">
+      <created>1740590330523</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740590330523</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -115,7 +121,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Implements concatenator" />
     <MESSAGE value="Updates comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates comment" />
+    <MESSAGE value="Adds code to strip out the {%...%} lines." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds code to strip out the {%...%} lines." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
