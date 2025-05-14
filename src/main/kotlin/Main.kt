@@ -3,7 +3,7 @@ import java.io.File
 fun main(args: Array<String>) {
 //  val workingDirectory= File(".").canonicalPath
   val workingDirectory=File("/google/src/cloud/dmail/pristine/google3/third_party/devsite/firebase/en/docs")
-  val outputFile=File("/usr/local/google/home/dmail/Documents/FB_inventory.txt")
+  val outputFile=File("/usr/local/google/home/dmail/Documents/DAC_inventory.txt")
   val rawFileList=workingDirectory.listFiles()
   val directoryList=getDirList(rawFileList)
   val listOfMDFiles=getMDFiles(directoryList)
